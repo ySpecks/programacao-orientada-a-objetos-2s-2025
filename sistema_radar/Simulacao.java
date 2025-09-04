@@ -4,15 +4,10 @@ public class Simulacao {
     public static void main(String[] args) {
         System.out.println("Simulação");
 
-        Carro C3 = new Carro();
-        C3.ano = 2012;
-        C3.modelo = "Picasso";
-        C3.placa = "NRS3155";
-        C3.velocidade = 0;
-
-        Radar radar = new Radar();
-        radar.limiteVelocidade = 60;
-        radar.Localizacao = "Pistao sul";
+        Carro C3 = new Carro("NRS3155", "Picasso",2012, 0);
+        
+        Radar radar = new Radar(60, "Pistão sul");
+        
 
         radar.avaliarVelocidade(C3);
 
