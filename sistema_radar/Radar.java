@@ -10,9 +10,9 @@ public class Radar {
     }
 
     public void avaliarVelocidade(Carro carro) {
-    if (carro.velocidade > this.limiteVelocidade){
+    if (carro.getVelocidade() > this.limiteVelocidade){
 
-        emitirNotificacao(carro.placa, carro.velocidade);
+        emitirNotificacao(carro.getPlaca(), carro.getVelocidade());
     }
 }
     public void emitirNotificacao(String placa, Integer velocidadeObservada){
